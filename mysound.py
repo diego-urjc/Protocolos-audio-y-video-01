@@ -2,7 +2,6 @@
 
 import math
 
-
 class Sound:
     samples_second = 44100
     max_amplitude = 2 ** 15 - 1
