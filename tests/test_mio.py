@@ -14,3 +14,7 @@ class Testvalues(unittest.TestCase):
 
         self.assertTrue(sound.duration > 0)
         self.assertTrue(type(sound.duration) == float or int)
+
+
+if __name__ == '__main__':
+    unittest.main()
