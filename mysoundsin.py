@@ -3,6 +3,7 @@ from mysound import Sound
 import math
 
 class SoundSin(Sound):
+
     def __init__(self, duration, frequency, amplitude):
         super().__init__(duration)
 
@@ -17,3 +18,5 @@ class SoundSin(Sound):
                                        math.sin(2 * math.pi * frequency * t))
 
 sign = SoundSin(0.5,4400,2500)
+
+
