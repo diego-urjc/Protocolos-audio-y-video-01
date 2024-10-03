@@ -35,12 +35,12 @@ class Sound:
                                        math.sin(2 * math.pi * frequency * t))
             print(self.buffer[nsample])
 
-
-    def soundmul(self, factor: float):
+    def soundmul(self, factor: float) -> 'Sound':
         s = Sound(self.duration)
         for nsample in range(self.nsamples):
-            self.buffer[nsample] = int(factor * self.buffer[nsample])
+            s.buffer[nsample] = int(factor * self.buffer[nsample])
         return s
+
     # utilizo la funcion soundmul para multiplicar mi sonido por un factor, que yo mismo elijo al invocar la funcion
 
     @staticmethod
@@ -76,4 +76,4 @@ class Sound:
 
 s = Sound(2)
 s.sin(440, 10000)
-s2 = s.soundmul(3)
+s2 = s.soundmul(2)
