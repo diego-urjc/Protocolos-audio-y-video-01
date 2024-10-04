@@ -32,10 +32,6 @@ class Sound:
             self.buffer[nsample] = int(amplitude *
                                        math.sin(2 * math.pi * frequency * t))
 
-
-
-
-
     def soundmul(self, factor: float) -> 'Sound':
         s = Sound(self.duration)
         for nsample in range(self.nsamples):
