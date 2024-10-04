@@ -1,4 +1,4 @@
-#Ejercicio 6
+# Ejercicio 6
 
 import unittest
 
@@ -20,8 +20,8 @@ class TestSoundSin(unittest.TestCase):
 
     def test_type(self):
         sound = SoundSin(3, 440, 1000)
-        self.assertTrue(type(sound.buffer) == list)
-        self.assertTrue(type(sound.nsamples) == int)
+        self.assertIsInstance(sound.buffer, list)
+        self.assertIsInstance(sound.nsamples, int)
 
 
 if __name__ == '__main__':

@@ -1,6 +1,7 @@
-#Ejercicio 5
+# Ejercicio 5
 from mysound import Sound
 import math
+
 
 class SoundSin(Sound):
 
@@ -10,13 +11,12 @@ class SoundSin(Sound):
         self.nsamples = int(self.samples_second * self.duration)
         self.buffer = [0] * self.nsamples
 
-        self.sin(frequency,amplitude)
+        self.sin(frequency, amplitude)
 
         for nsample in range(self.nsamples):
             t = nsample / self.samples_second
             self.buffer[nsample] = int(amplitude *
                                        math.sin(2 * math.pi * frequency * t))
 
-sign = SoundSin(0.5,4400,2500)
 
-
+sign = SoundSin(0.5, 4400, 2500)
