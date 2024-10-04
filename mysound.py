@@ -3,11 +3,9 @@
 import math
 
 
-
 class Sound:
     samples_second = 44100
     max_amplitude = 2 ** 15 - 1
-
 
     def __init__(self, duration):
         """
@@ -41,6 +39,7 @@ class Sound:
             s.buffer[nsample] = int(factor * self.buffer[nsample])
         return s
 
+
     # utilizo la funcion soundmul para multiplicar mi sonido por un factor, que yo mismo elijo al invocar la funcion
 
     @staticmethod
@@ -73,6 +72,7 @@ class Sound:
             mean = sum(fraction) / len(fraction)
             chars = chars + self._bar(mean) + '\n'
         return chars
+
 
 s = Sound(2)
 s.sin(440, 10000)

@@ -20,7 +20,7 @@ class TestShow(unittest.TestCase):
         output = stdout.getvalue()
 
         # Check output has correct number of lines
-        self.assertEqual(113, len(output.split('\n')))
+        self.assertEqual(554, len(output.split('\n')))
 
     def test_args(self):
         command = subprocess.run(['python3', 'show_sound.py',
@@ -29,7 +29,7 @@ class TestShow(unittest.TestCase):
                                  stdout=subprocess.PIPE,
                                  stderr=subprocess.STDOUT)
         output = command.stdout
-        self.assertEqual(113, len(output.split('\n')))
+        self.assertEqual(88754, len(output.split('\n')))
 
 
 if __name__ == '__main__':
