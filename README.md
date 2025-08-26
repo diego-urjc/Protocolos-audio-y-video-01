@@ -1,4 +1,4 @@
-# Objetivos:
+# Objetivos
 
 - Conocer y practicar la programación orientada a objetos (con conceptos como clase, objeto, herencia, instanciación).
 - Usar varios modulos Python, importando funcionalidad creada en otros modulos.
